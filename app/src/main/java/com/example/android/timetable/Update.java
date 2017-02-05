@@ -6,27 +6,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Update extends AppCompatActivity {
 
-    Button updateButton;
-
+    Button ttButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_update);
 
-        updateButton = (Button) findViewById(R.id.updater_button);
-        update();
+
+        ttButton = (Button) findViewById(R.id.ttButton);
+        timeTable();
     }
 
-    protected void update(){
-        updateButton.setOnClickListener(new View.OnClickListener() {
+
+
+    protected void timeTable(){
+        ttButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(MainActivity.this, Update.class);
+                Intent in = new Intent(Update.this, TimeTable.class);
                 startActivity(in);
             }
         });
 
     }
+
 }
