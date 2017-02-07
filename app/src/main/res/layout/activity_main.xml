@@ -11,6 +11,7 @@
     tools:context="com.example.android.timetable.MainActivity">
 
     <Button
+        android:id="@+id/viewer_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Viewer"/>

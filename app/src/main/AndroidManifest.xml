@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Update" />
-        <activity android:name=".TimeTable"></activity>
+        <activity android:name=".TimeTable" />
+        <activity android:name=".View"></activity>
     </application>
 
 </manifest>

@@ -5,10 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class Update extends AppCompatActivity {
 
     Button ttButton;
+    EditText noticeGetText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +19,9 @@ public class Update extends AppCompatActivity {
 
         ttButton = (Button) findViewById(R.id.ttButton);
         timeTable();
+        noticeGetText = (EditText) findViewById(R.id.notice_get_text);
+        getNotice();
     }
-
 
 
     protected void timeTable(){
@@ -31,5 +34,10 @@ public class Update extends AppCompatActivity {
         });
 
     }
+
+    protected void getNotice() {
+        noticeGetText.getText();
+    }
+
 
 }

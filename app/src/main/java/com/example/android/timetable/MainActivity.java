@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button updateButton;
+    Button viewButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,5 +29,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    protected void view() {
+        viewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(MainActivity.this, Viewer.class);
+                startActivity(in);
+            }
+        });
     }
 }
