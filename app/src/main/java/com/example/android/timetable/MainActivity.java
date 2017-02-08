@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         updateButton = (Button) findViewById(R.id.updater_button);
+        viewButton = (Button)findViewById(R.id.viewer_button);
         update();
+        viewer();
     }
 
     protected void update(){
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    protected void view() {
+    protected void viewer() {
         viewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

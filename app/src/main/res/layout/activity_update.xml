@@ -20,8 +20,13 @@
     <EditText
         android:id="@+id/notice_get_text"
         android:layout_width="wrap_content"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:hint="Important Notices" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"/>
 
 
 </LinearLayout>
